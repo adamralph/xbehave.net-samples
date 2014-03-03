@@ -1,7 +1,7 @@
 require 'albacore'
 
 xunit_command_net40 = "src/packages/xunit.runners.1.9.2/tools/xunit.console.clr4.exe"
-nuget_command = "src/packages/NuGet.CommandLine.2.7.3/tools/NuGet.exe"
+nuget_command = "src/packages/NuGet.CommandLine.2.8.0/tools/NuGet.exe"
 solution = "src/XBehave.Samples.sln"
 
 samples = [
