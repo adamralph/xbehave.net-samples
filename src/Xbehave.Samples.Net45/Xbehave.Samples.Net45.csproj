@@ -47,6 +47,7 @@
     <Compile Include="Fixtures\Calculator.cs" />
     <Compile Include="IsolatedSteps.cs" />
     <Compile Include="Fixtures\Disposable.cs" />
+    <Compile Include="AsyncSteps.cs" />
     <Compile Include="Synonyms.cs" />
     <Compile Include="TheLot.cs" />
     <Compile Include="Examples.cs" />

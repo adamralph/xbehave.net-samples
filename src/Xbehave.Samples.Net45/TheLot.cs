@@ -38,7 +38,7 @@ namespace Xbehave.Samples
                 .And(c => new Disposable().Using(c));
 
             "When I add the numbers together"
-                .When(() => answer = calculator.Add(x, y))
+                .When(async () => answer = await calculator.AddAsync(x, y))
                 .WithTimeout(1000);
 
             "Then the answer is not more than {2}"
