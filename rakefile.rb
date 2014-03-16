@@ -5,7 +5,7 @@ nuget_command = "src/packages/NuGet.CommandLine.2.8.0/tools/NuGet.exe"
 solution = "src/XBehave.Samples.sln"
 
 samples = [
-  { :command => xunit_command_net40, :assembly => "src/Xbehave.Samples.Net40/bin/Debug/Xbehave.Samples.Net40.dll" },
+  { :command => xunit_command_net40, :assembly => "src/Xbehave.Samples.Net45/bin/Debug/Xbehave.Samples.dll" },
   { :command => xunit_command_net40, :assembly => "src/Xbehave.Samples.FSharp.Net45/bin/Release/Xbehave.Samples.FSharp.dll" }
 ]
 
