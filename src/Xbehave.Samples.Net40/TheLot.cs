@@ -35,7 +35,7 @@ namespace Xbehave.Samples
                 .And(() => calculator = new Calculator());
 
             "And some disposable object"
-                .And(() => new Disposable().Using());
+                .And(c => new Disposable().Using(c));
 
             "When I add the numbers together"
                 .When(() => answer = calculator.Add(x, y))

@@ -73,7 +73,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xbehave">
-      <HintPath>..\packages\Xbehave.1.0.0\lib\net40\Xbehave.dll</HintPath>
+      <HintPath>..\packages\Xbehave.1.1.0\lib\net45\Xbehave.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="xunit">
