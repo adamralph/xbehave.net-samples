@@ -9,9 +9,10 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xbehave.Samples.FSharp.Net45</RootNamespace>
     <AssemblyName>Xbehave.Samples.FSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <Name>Xbehave.Samples.FSharp.Net45</Name>
     <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -73,7 +74,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xbehave">
-      <HintPath>..\packages\Xbehave.1.0.0\lib\net40\Xbehave.dll</HintPath>
+      <HintPath>..\packages\Xbehave.1.1.0\lib\net45\Xbehave.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="xunit">
