@@ -11,11 +11,11 @@ module Pipes =
     open Xunit
 
     // helper functions
-    let Given f (s:string) = s.Given(System.Action< >(f)) |> ignore
-    let And f (s:string) = s.And(System.Action< >(f)) |> ignore
-    let But f (s:string) = s.But(System.Action< >(f)) |> ignore
-    let When f (s:string) = s.When(System.Action< >(f)) |> ignore
-    let Then f (s:string) = s.Then(System.Action< >(f)) |> ignore
+    let Given f (s:string) = s.f(System.Action< >(f)) |> ignore
+    let And f (s:string) = s.f(System.Action< >(f)) |> ignore
+    let But f (s:string) = s.f(System.Action< >(f)) |> ignore
+    let When f (s:string) = s.f(System.Action< >(f)) |> ignore
+    let Then f (s:string) = s.f(System.Action< >(f)) |> ignore
 
     // SUT
     type Calculator () = member __.Add(x,y) = x + y

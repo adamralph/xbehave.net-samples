@@ -16,7 +16,7 @@ namespace Xbehave.Samples
         public static void Background()
         {
             "Given a stack"
-                .Given(() => calculator = new Calculator())
+                .f(() => calculator = new Calculator())
                 .Teardown(() => calculator.CoolDown());
         }
 
@@ -26,34 +26,29 @@ namespace Xbehave.Samples
         public static void Addition(int x, int y, int expectedAnswer, Calculator calculator, int answer)
         {
             "Given the number {0}"
-                .Given(() => { });
+                .f(() => { });
 
             "And the number {1}"
-                .And(() => { });
+                .f(() => { });
 
             "And a calculator"
-                .And(() => calculator = new Calculator());
+                .f(() => calculator = new Calculator());
 
             "And some disposable object"
-                .And(c => new Disposable().Using(c));
+                .f(c => new Disposable().Using(c));
 
             "When I add the numbers together"
-                .When(async () => answer = await calculator.AddAsync(x, y))
-                .WithTimeout(1000);
+                .f(async () => answer = await calculator.AddAsync(x, y));
 
-            "Then the answer is not more than {2}"
-                .Then(() => (++answer).Should().Be(expectedAnswer + 1))
-                .InIsolation();
-
-            "And the answer is {2}"
-                .And(() => answer.Should().Be(expectedAnswer));
+            "Then the answer is {2}"
+                .f(() => answer.Should().Be(expectedAnswer));
 
             "And the answer is one more than {2}"
-                .And(() => answer.Should().Be(expectedAnswer + 1))
+                .f(() => answer.Should().Be(expectedAnswer + 1))
                 .Skip("because the assertion is nonsense");
 
             "But the answer is not one less than {2}"
-                .But(() => answer.Should().NotBe(expectedAnswer - 1));
+                .f(() => answer.Should().NotBe(expectedAnswer - 1));
         }
     }
 }

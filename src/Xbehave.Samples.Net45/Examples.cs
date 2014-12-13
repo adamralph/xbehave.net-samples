@@ -16,19 +16,19 @@ namespace Xbehave.Samples
         public void Addition(int x, int y, int expectedAnswer, Calculator calculator, int answer)
         {
             "Given the number {0}"
-                .Given(() => { });
+                .f(() => { });
 
             "And the number {1}"
-                .And(() => { });
+                .f(() => { });
 
             "And a calculator"
-                .And(() => calculator = new Calculator());
+                .f(() => calculator = new Calculator());
 
             "When I add the numbers together"
-                .When(() => answer = calculator.Add(x, y));
+                .f(() => answer = calculator.Add(x, y));
 
             "Then the answer is {2}"
-                .Then(() => answer.Should().Be(expectedAnswer));
+                .f(() => answer.Should().Be(expectedAnswer));
         }
     }
 }
