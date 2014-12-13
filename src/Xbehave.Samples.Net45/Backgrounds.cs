@@ -16,19 +16,19 @@ namespace Xbehave.Samples
         public static void Background()
         {
             "Given a global administrator named \"Greg\""
-                .Given(() => Users.Save(new GlobalAdministrator { Name = "Greg", Password = "apples" }))
+                .f(() => Users.Save(new GlobalAdministrator { Name = "Greg", Password = "apples" }))
                 .Teardown(() => Users.Remove("Greg"));
 
             "And a blog named \"Greg's anti-tax rants\" owned by \"Greg\""
-                .And(() => Blogs.Save(new Blog { Name = "Greg's anti-tax rants", Owner = Users.Get("Greg") }))
+                .f(() => Blogs.Save(new Blog { Name = "Greg's anti-tax rants", Owner = Users.Get("Greg") }))
                 .Teardown(() => Blogs.Remove("Greg's anti-tax rants"));
 
             "And a customer named \"Dr. Bill\""
-                .And(() => Users.Save(new Customer { Name = "Dr. Bill", Password = "oranges" }))
+                .f(() => Users.Save(new Customer { Name = "Dr. Bill", Password = "oranges" }))
                 .Teardown(() => Users.Remove("Dr. Bill"));
 
             "And a blog named \"Expensive Therapy\" owned by \"Dr. Bill\""
-                .And(() => Blogs.Save(new Blog { Name = "Expensive Therapy", Owner = Users.Get("Dr. Bill") }))
+                .f(() => Blogs.Save(new Blog { Name = "Expensive Therapy", Owner = Users.Get("Dr. Bill") }))
                 .Teardown(() => Blogs.Remove("Expensive Therapy"));
         }
 
@@ -36,39 +36,39 @@ namespace Xbehave.Samples
         public static void DoctorBillPostsToHisOwnBlog()
         {
             "Given I am logged in as Dr. Bill"
-                .Given(() => Site.Login("Dr. Bill", "oranges"));
+                .f(() => Site.Login("Dr. Bill", "oranges"));
 
             "When I try to post to \"Expensive Therapy\""
-                .When(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
+                .f(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
 
             "Then I should see \"Your article was published.\""
-                .Then(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
+                .f(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
         }
 
         [Scenario]
         public static void DoctorBillTriesToPostToSomebodyElsesBlogAndFails()
         {
             "Given I am logged in as Dr. Bill"
-                .Given(() => Site.Login("Dr. Bill", "oranges"));
+                .f(() => Site.Login("Dr. Bill", "oranges"));
 
             "When I try to post to \"Greg's anti-tax rants\""
-                .When(() => Blogs.Get("Greg's anti-tax rants").Post(new Article { Body = "This is a great blog!" }));
+                .f(() => Blogs.Get("Greg's anti-tax rants").Post(new Article { Body = "This is a great blog!" }));
 
             "Then I should see \"Hey! That's not your blog!\""
-                .Then(() => Site.CurrentPage.Body.Should().Contain("Hey! That's not your blog!"));
+                .f(() => Site.CurrentPage.Body.Should().Contain("Hey! That's not your blog!"));
         }
 
         [Scenario]
         public static void GregPostsToAClientBlog()
         {
             "Given I am logged in as Greg"
-                .Given(() => Site.Login("Greg", "apples"));
+                .f(() => Site.Login("Greg", "apples"));
 
             "When I try to post to \"Expensive Therapy\""
-                .When(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
+                .f(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
 
             "Then I should see \"Your article was published.\""
-                .Then(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
+                .f(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
         }
 
         private static class Site
