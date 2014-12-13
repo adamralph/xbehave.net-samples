@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xbehave.2.0.0-beta001-build-488\build\portable-net45\Xbehave.props" Condition="Exists('..\packages\Xbehave.2.0.0-beta001-build-488\build\portable-net45\Xbehave.props')" />
+  <Import Project="..\packages\Xbehave.2.0.0-beta002-build494\build\portable-net45+win+wpa81+wp80\Xbehave.props" Condition="Exists('..\packages\Xbehave.2.0.0-beta002-build494\build\portable-net45+win+wpa81+wp80\Xbehave.props')" />
   <Import Project="..\packages\xunit.core.2.0.0-beta5-build2785\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.0.0-beta5-build2785\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid\xunit.core.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -15,7 +15,7 @@
     <Name>Xbehave.Samples.FSharp.Net45</Name>
     <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
     <TargetFrameworkProfile />
-    <NuGetPackageImportStamp>7a3b4f23</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>bf7c05e9</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -77,7 +77,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xbehave">
-      <HintPath>..\packages\Xbehave.2.0.0-beta001-build-488\lib\portable-net45\Xbehave.dll</HintPath>
+      <HintPath>..\packages\Xbehave.2.0.0-beta002-build494\lib\portable-net45+win+wpa81+wp80\Xbehave.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="xunit.abstractions">
@@ -98,7 +98,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\xunit.core.2.0.0-beta5-build2785\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.0.0-beta5-build2785\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid\xunit.core.props'))" />
-    <Error Condition="!Exists('..\packages\Xbehave.2.0.0-beta001-build-488\build\portable-net45\Xbehave.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xbehave.2.0.0-beta001-build-488\build\portable-net45\Xbehave.props'))" />
+    <Error Condition="!Exists('..\packages\Xbehave.2.0.0-beta002-build494\build\portable-net45+win+wpa81+wp80\Xbehave.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xbehave.2.0.0-beta002-build494\build\portable-net45+win+wpa81+wp80\Xbehave.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -5,6 +5,9 @@
 namespace Xbehave.Samples.Fixtures
 {
     using System;
+#if NETFX_CORE || WPA81
+    using System.Diagnostics;
+#endif
 
     public sealed class Disposable : IDisposable
     {
@@ -12,17 +15,32 @@ namespace Xbehave.Samples.Fixtures
 
         public Disposable()
         {
-            Console.WriteLine("CREATED: {0}", this.id);
+#if NETFX_CORE || WPA81
+            Debug
+#else
+            Console
+#endif
+                .WriteLine("CREATED: {0}", this.id);
         }
 
         public void Use()
         {
-            Console.WriteLine("USED: {0}", this.id);
+#if NETFX_CORE || WPA81
+            Debug
+#else
+            Console
+#endif
+                .WriteLine("USED: {0}", this.id);
         }
 
         public void Dispose()
         {
-            Console.WriteLine("DISPOSED: {0}", this.id);
+#if NETFX_CORE || WPA81
+            Debug
+#else
+            Console
+#endif
+                .WriteLine("DISPOSED: {0}", this.id);
         }
     }
 }
