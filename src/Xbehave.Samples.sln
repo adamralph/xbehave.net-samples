@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{1DAD0ED8-7F96-4299-BEBB-04F3C25BFC76}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,14 +18,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.Net45", "Xb
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Xbehave.Samples.FSharp.Net45", "Xbehave.Samples.FSharp.Net45\Xbehave.Samples.FSharp.Net45.fsproj", "{410529E9-B417-44D0-A48E-B3009E16783E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.win81", "Xbehave.Samples.win81\Xbehave.Samples.win81.csproj", "{83807D9E-B620-483E-AA25-8711EACA3440}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.universal", "Xbehave.Samples.universal\Xbehave.Samples.universal.csproj", "{CE3B1C63-EA51-4195-95DF-912B20E1AA33}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.wp8", "Xbehave.Samples.wp8\Xbehave.Samples.wp8.csproj", "{C37BFD7A-F089-49A3-85B4-C09ACBD6CC8A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.wpa81", "Xbehave.Samples.wpa81\Xbehave.Samples.wpa81.csproj", "{ED1B7177-62BB-44A8-BD0A-520618575DAC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,22 +32,6 @@ Global
 		{410529E9-B417-44D0-A48E-B3009E16783E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{410529E9-B417-44D0-A48E-B3009E16783E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{410529E9-B417-44D0-A48E-B3009E16783E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83807D9E-B620-483E-AA25-8711EACA3440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83807D9E-B620-483E-AA25-8711EACA3440}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83807D9E-B620-483E-AA25-8711EACA3440}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83807D9E-B620-483E-AA25-8711EACA3440}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE3B1C63-EA51-4195-95DF-912B20E1AA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE3B1C63-EA51-4195-95DF-912B20E1AA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE3B1C63-EA51-4195-95DF-912B20E1AA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE3B1C63-EA51-4195-95DF-912B20E1AA33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C37BFD7A-F089-49A3-85B4-C09ACBD6CC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C37BFD7A-F089-49A3-85B4-C09ACBD6CC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C37BFD7A-F089-49A3-85B4-C09ACBD6CC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C37BFD7A-F089-49A3-85B4-C09ACBD6CC8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED1B7177-62BB-44A8-BD0A-520618575DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED1B7177-62BB-44A8-BD0A-520618575DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED1B7177-62BB-44A8-BD0A-520618575DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED1B7177-62BB-44A8-BD0A-520618575DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 require 'albacore'
 
 $msbuild_command = "C:/Program Files (x86)/MSBuild/12.0/Bin/MSBuild.exe"
-xunit_command = "src/packages/xunit.runners.2.0.0-beta5-build2785/tools/xunit.console.exe"
+xunit_command = "src/packages/xunit.runner.console.2.0.0/tools/xunit.console.exe"
 nuget_command = "src/packages/NuGet.CommandLine.2.8.3/tools/NuGet.exe"
 $solution = "src/XBehave.Samples.sln"
 logs = "artifacts/logs"
@@ -9,10 +9,6 @@ logs = "artifacts/logs"
 samples = [
   "src/Xbehave.Samples.FSharp.Net45/bin/Release/Xbehave.Samples.FSharp.dll",
   "src/Xbehave.Samples.Net45/bin/Release/Xbehave.Samples.net45.dll",
-  "src/Xbehave.Samples.universal/bin/Release/Xbehave.Samples.universal.dll",
-  "src/Xbehave.Samples.win81/bin/Release/Xbehave.Samples.win81.dll",
-  "src/Xbehave.Samples.wp8/bin/Release/Xbehave.Samples.wp8.dll",
-  "src/Xbehave.Samples.wpa81/bin/Release/Xbehave.Samples.wpa81.dll"
 ]
 
 Albacore.configure do |config|
