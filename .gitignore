@@ -4,6 +4,7 @@ obj
 
 *.suo
 *.user
+*.cache
 
 /src/packages/*
 !/src/packages/NuGet.CommandLine.*
