@@ -109,7 +109,7 @@
   <Target Name="BeforeBuild">
   </Target>
   -->
-  <Target Name="AfterBuild">
+  <Target Name="AfterBuild" Condition="Exists('..\packages\xunit.runner.msbuild.2.0.0\build\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.runner.msbuild.props')">
     <xunit Assemblies="$(OutputPath)\$(AssemblyName).dll" />
   </Target>
 </Project>
