@@ -66,11 +66,27 @@ namespace Xbehave.Samples
         [FailingBefore]
         public void FailingBefore()
         {
+            "Given true is true"
+                .f(() => true.Should().Be(true));
         }
 
         [Scenario]
         [FailingAfter]
         public void FailingAfter()
+        {
+            "Given true is true"
+                .f(() => true.Should().Be(true));
+        }
+
+        [Scenario]
+        [FailingBefore]
+        public void FailingBeforeEmptyScenario()
+        {
+        }
+
+        [Scenario]
+        [FailingAfter]
+        public void FailingAfterEmptyScenario()
         {
         }
 
