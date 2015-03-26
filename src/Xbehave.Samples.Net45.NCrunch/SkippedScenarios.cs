@@ -7,7 +7,6 @@ namespace Xbehave.Samples
     using FluentAssertions;
     using Xbehave;
     using Xbehave.Samples.Fixtures;
-    using Xunit;
 
     public class SkippedScenarios
     {
