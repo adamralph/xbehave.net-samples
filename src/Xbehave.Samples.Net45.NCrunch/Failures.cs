@@ -5,9 +5,11 @@
 namespace Xbehave.Samples
 {
     using System;
+    using System.Collections.Generic;
     using System.Reflection;
     using FluentAssertions;
     using Xbehave;
+    using Xunit;
     using Xunit.Sdk;
 
     public class Failures
@@ -72,6 +74,20 @@ namespace Xbehave.Samples
         {
         }
 
+        [Scenario]
+        [BadExample]
+        public void FailedDiscovery()
+        {
+            "Given true is true"
+                .f(() => true.Should().Be(true));
+        }
+
+        [Scenario]
+        [BadExample]
+        public void FailedDiscoveryForAnEmptyScenario()
+        {
+        }
+
         public class FailingFeatureClass
         {
             public FailingFeatureClass()
@@ -106,6 +122,24 @@ namespace Xbehave.Samples
             public override void After(MethodInfo methodUnderTest)
             {
                 true.Should().BeFalse();
+            }
+        }
+
+        public sealed class BadExampleAttribute : MemberDataAttributeBase
+        {
+            public BadExampleAttribute()
+                : base("Dummy", new object[0])
+            {
+            }
+
+            public override IEnumerable<object[]> GetData(MethodInfo testMethod)
+            {
+                throw new NotImplementedException();
+            }
+
+            protected override object[] ConvertDataItem(MethodInfo testMethod, object item)
+            {
+                throw new NotImplementedException();
             }
         }
     }
