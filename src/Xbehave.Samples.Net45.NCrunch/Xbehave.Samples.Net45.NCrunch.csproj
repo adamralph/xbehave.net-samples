@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Xbehave.Samples</RootNamespace>
-    <AssemblyName>Xbehave.Samples.net45</AssemblyName>
+    <AssemblyName>Xbehave.Samples.net45.ncrunch</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -54,6 +54,8 @@
     <Compile Include="Fixtures\Calculator.cs" />
     <Compile Include="Fixtures\Disposable.cs" />
     <Compile Include="AsyncSteps.cs" />
+    <Compile Include="Failures.cs" />
+    <Compile Include="SkippedScenarios.cs" />
     <Compile Include="Synonyms.cs" />
     <Compile Include="TheLot.cs" />
     <Compile Include="Examples.cs" />

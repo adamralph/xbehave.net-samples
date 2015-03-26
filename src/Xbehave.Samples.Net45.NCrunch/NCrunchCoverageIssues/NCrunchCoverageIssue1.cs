@@ -17,7 +17,7 @@ namespace Xbehave.Samples.NCrunchCoverageIssues
                 .f(() => answer = new TwoPassingStepsSut().GetAnswer());
 
             // NCrunch shows the expression in this step as covered
-            "Then 42"
+            "Then the answer is 42"
                 .f(() => answer.Should().Be(42));
         }
 
@@ -25,7 +25,7 @@ namespace Xbehave.Samples.NCrunchCoverageIssues
         public void OnePassingStep()
         {
             // NCrunch shows the expression in this step as covered
-            "When I Get an answer"
+            "When I get an answer"
                 .f(() => new OnePassingStepSut().GetAnswer());
         }
 
