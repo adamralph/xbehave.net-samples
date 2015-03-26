@@ -7,8 +7,9 @@ $solution = "src/XBehave.Samples.sln"
 logs = "artifacts/logs"
 
 samples = [
-  "src/Xbehave.Samples.FSharp.Net45/bin/Release/Xbehave.Samples.FSharp.dll",
-  "src/Xbehave.Samples.Net45/bin/Release/Xbehave.Samples.net45.dll",
+  "src/Xbehave.Samples.FSharp.Net45.NCrunch/bin/Release/Xbehave.Samples.FSharp.net45.ncrunch.dll",
+  "src/Xbehave.Samples.Net45.MSBuild/bin/Release/Xbehave.Samples.net45.msbuild.dll",
+  "src/Xbehave.Samples.Net45.NCrunch/bin/Release/Xbehave.Samples.net45.ncrunch.dll",
 ]
 
 Albacore.configure do |config|
