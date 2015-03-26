@@ -16,7 +16,7 @@ Albacore.configure do |config|
 end
 
 desc "Execute default tasks"
-task :default => [:sample]
+task :default => [:build]
 
 desc "Restore NuGet packages"
 exec :restore do |cmd|

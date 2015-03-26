@@ -28,5 +28,11 @@ namespace Xbehave.Samples
             "Then the answer is 3"
                 .f(() => answer.Should().Be(3));
         }
+
+        [Scenario]
+        public void EmptyScenario()
+        {
+            true.Should().Be(true);
+        }
     }
 }
