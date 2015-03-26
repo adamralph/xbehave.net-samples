@@ -2,7 +2,7 @@
 //  Copyright (c) xBehave.net contributors. All rights reserved.
 // </copyright>
 
-namespace Xbehave.Samples.Net40
+namespace Xbehave.Samples
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
