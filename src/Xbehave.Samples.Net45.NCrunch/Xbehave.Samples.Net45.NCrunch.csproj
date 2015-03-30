@@ -48,9 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Backgrounds.cs" />
-    <Compile Include="NCrunchCoverageIssues\NCrunchCoverageIssue3.cs" />
-    <Compile Include="NCrunchCoverageIssues\NCrunchCoverageIssue2.cs" />
-    <Compile Include="NCrunchCoverageIssues\NCrunchCoverageIssue1.cs" />
+    <Compile Include="NCrunchCoverageIssues\NCrunchCoverageIssue.cs" />
     <Compile Include="Fixtures\Calculator.cs" />
     <Compile Include="Fixtures\Disposable.cs" />
     <Compile Include="AsyncSteps.cs" />
