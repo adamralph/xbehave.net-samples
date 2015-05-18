@@ -7,36 +7,36 @@ namespace Xbehave.Samples
     using System;
     using System.Diagnostics.CodeAnalysis;
     using FluentAssertions;
-    using Xbehave.Fluent;
     using Xbehave.Samples.Fixtures;
+    using Xbehave.Sdk;
 
     public static class Synonyms
     {
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
-        public static IStep x(this string text, Action body)
+        public static IStepBuilder x(this string text, Action body)
         {
             return text.f(body);
         }
 
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
-        public static IStep ʃ(this string text, Action body)
+        public static IStepBuilder ʃ(this string text, Action body)
         {
             return text.f(body);
         }
 
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
-        public static IStep σʃσ(this string text, Action body)
+        public static IStepBuilder σʃσ(this string text, Action body)
         {
             return text.f(body);
         }
 
-        public static IStep 梟(this string text, Action body)
+        public static IStepBuilder 梟(this string text, Action body)
         {
             return text.f(body);
         }
 
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
-        public static IStep χ(this string text, Action body)
+        public static IStepBuilder χ(this string text, Action body)
         {
             return text.f(body);
         }
