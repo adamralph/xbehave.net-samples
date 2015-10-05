@@ -1,8 +1,8 @@
 require 'albacore'
 
 $msbuild_command = "C:/Program Files (x86)/MSBuild/12.0/Bin/MSBuild.exe"
-xunit_command = "src/packages/xunit.runner.console.2.0.0/tools/xunit.console.exe"
-nuget_command = "src/packages/NuGet.CommandLine.2.8.3/tools/NuGet.exe"
+xunit_command = "src/packages/xunit.runner.console.2.1.0/tools/xunit.console.exe"
+nuget_command = "src/.nuget/NuGet.exe"
 $solution = "src/XBehave.Samples.sln"
 logs = "artifacts/logs"
 
