@@ -77,11 +77,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xbehave.Core">
-      <HintPath>..\packages\Xbehave.Core.2.0.1\lib\portable-net45\Xbehave.Core.dll</HintPath>
+      <HintPath>..\packages\Xbehave.Core.2.1.0\lib\portable-net45\Xbehave.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xbehave.Execution.desktop">
-      <HintPath>..\packages\Xbehave.Core.2.0.1\lib\portable-net45\Xbehave.Execution.desktop.dll</HintPath>
+      <HintPath>..\packages\Xbehave.Core.2.1.0\lib\portable-net45\Xbehave.Execution.desktop.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="xunit.abstractions">
