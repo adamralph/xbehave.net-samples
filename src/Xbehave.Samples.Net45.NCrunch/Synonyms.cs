@@ -9,39 +9,39 @@
     public static class Synonyms
     {
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
-        public static IStepBuilder x(this string text, Action body)
+        public static IStepBuilder f(this string text, Action body)
         {
-            return text.f(body);
+            return text.x(body);
         }
 
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
         public static IStepBuilder ʃ(this string text, Action body)
         {
-            return text.f(body);
+            return text.x(body);
         }
 
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
         public static IStepBuilder σʃσ(this string text, Action body)
         {
-            return text.f(body);
+            return text.x(body);
         }
 
         public static IStepBuilder 梟(this string text, Action body)
         {
-            return text.f(body);
+            return text.x(body);
         }
 
         [SuppressMessage("Microsoft.StyleCop.CSharp.NamingRules", "SA1300:ElementMustBeginWithUpperCaseLetter", Justification = "Fluent API")]
         public static IStepBuilder χ(this string text, Action body)
         {
-            return text.f(body);
+            return text.x(body);
         }
 
         [Scenario]
         public static void Addition(int x, int y, Calculator calculator, int answer)
         {
             "Given the number 1"
-                .x(() => x = 1);
+                .f(() => x = 1);
 
             "And the number 2"
                 .ʃ(() => y = 2);

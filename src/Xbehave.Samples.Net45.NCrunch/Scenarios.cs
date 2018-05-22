@@ -10,19 +10,19 @@
         public void Addition(int x, int y, Calculator calculator, int answer)
         {
             "Given the number 1"
-                .f(() => x = 1);
+                .x(() => x = 1);
 
             "And the number 2"
-                .f(() => y = 2);
+                .x(() => y = 2);
 
             "And a calculator"
-                .f(() => calculator = new Calculator());
+                .x(() => calculator = new Calculator());
 
             "When I add the numbers together"
-                .f(() => answer = calculator.Add(x, y));
+                .x(() => answer = calculator.Add(x, y));
 
             "Then the answer is 3"
-                .f(() => answer.Should().Be(3));
+                .x(() => answer.Should().Be(3));
         }
 
         [Scenario]

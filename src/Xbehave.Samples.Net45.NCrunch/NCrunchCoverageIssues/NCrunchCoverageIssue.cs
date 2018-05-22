@@ -14,13 +14,13 @@
             // NCrunch marks the step definition as failing - INCORRECT
             // NCrunch marks the step delegate as failing - INCORRECT
             "Given true is true"
-                .f(() => true.Should().BeTrue());
+                .x(() => true.Should().BeTrue());
 
             // NCrunch marks the step definition as failing - INCORRECT
             // NCrunch marks the step delegate as failing - CORRECT
             // NCrunch marks the second statement of the delegate as the exception source - CORRECT
             "Then true is false"
-                .f(() =>
+                .x(() =>
                 {
                     true.Should().BeTrue();
                     true.Should().BeFalse();
@@ -29,7 +29,7 @@
             // NCrunch marks the step definition as failing - INCORRECT
             // NCrunch marks the step delegate as uncovered - CORRECT
             "And true is true"
-                .f(() => true.Should().BeTrue());
+                .x(() => true.Should().BeTrue());
         }
     }
 }

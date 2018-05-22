@@ -20,41 +20,41 @@
         public void FailingStep()
         {
             "Given true is false"
-                .f(() => true.Should().Be(false));
+                .x(() => true.Should().Be(false));
         }
 
         [Scenario]
         public void PassingStepAndFailingStep()
         {
             "Given true is true"
-                .f(() => true.Should().Be(true));
+                .x(() => true.Should().Be(true));
 
             "Then true is false"
-                .f(() => true.Should().Be(false));
+                .x(() => true.Should().Be(false));
         }
 
         [Scenario]
         public void FailingStepAndPassingStep()
         {
             "Given true is false"
-                .f(() => true.Should().Be(false));
+                .x(() => true.Should().Be(false));
 
             "Then true is true"
-                .f(() => true.Should().Be(true));
+                .x(() => true.Should().Be(true));
         }
 
         [Scenario]
         public void FailingDisposal()
         {
             "Given a failing disposable"
-                .f(c => new FailingDisposable().Using(c));
+                .x(c => new FailingDisposable().Using(c));
         }
 
         [Scenario]
         public void FailingTeardown()
         {
             "Given a fixture which believes true is false"
-                .f(c => { })
+                .x(c => { })
                 .Teardown(() => true.Should().BeFalse());
         }
 
@@ -63,7 +63,7 @@
         public void FailingBefore()
         {
             "Given true is true"
-                .f(() => true.Should().Be(true));
+                .x(() => true.Should().Be(true));
         }
 
         [Scenario]
@@ -71,7 +71,7 @@
         public void FailingAfter()
         {
             "Given true is true"
-                .f(() => true.Should().Be(true));
+                .x(() => true.Should().Be(true));
         }
 
         [Scenario]
@@ -91,7 +91,7 @@
         public void FailedDiscovery()
         {
             "Given true is true"
-                .f(() => true.Should().Be(true));
+                .x(() => true.Should().Be(true));
         }
 
         [Scenario]

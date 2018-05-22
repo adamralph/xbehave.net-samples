@@ -8,9 +8,9 @@ module ComputationBuilder =
 
     // computation builder
     type StepBuilder(text:string) = 
-        member x.Zero() = ()
-        member x.Delay(f) = f
-        member x.Run(f) = text.f(System.Action< >(f)) |> ignore
+        member y.Zero() = ()
+        member y.Delay(x) = x
+        member y.Run(x) = text.x(System.Action< >(x)) |> ignore
 
     // helper functions
     let Given text = StepBuilder("Given " + text)
