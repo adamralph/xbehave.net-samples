@@ -9,11 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFi
 		Xbehave.Samples.ruleset = Xbehave.Samples.ruleset
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BBC5886B-9456-470B-836F-722154863920}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.Net45.NCrunch", "Xbehave.Samples.Net45.NCrunch\Xbehave.Samples.Net45.NCrunch.csproj", "{318A83C1-F734-4612-A04F-9BE0D26657BF}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Xbehave.Samples.FSharp.Net45.NCrunch", "Xbehave.Samples.FSharp.Net45.NCrunch\Xbehave.Samples.FSharp.Net45.NCrunch.fsproj", "{410529E9-B417-44D0-A48E-B3009E16783E}"

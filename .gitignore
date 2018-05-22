@@ -1,9 +1,5 @@
-artifacts
 bin
 obj
 packages
 
 *.suo
-*.user
-*.cache
-*.sln.ide
