@@ -12,7 +12,7 @@
         public static void Background()
         {
             "Given a stack"
-                .f(() => calculator = new Calculator())
+                .x(() => calculator = new Calculator())
                 .Teardown(() => calculator.CoolDown());
         }
 
@@ -22,29 +22,29 @@
         public static void Addition(int x, int y, int expectedAnswer, Calculator calculator, int answer)
         {
             "Given the number {0}"
-                .f(() => { });
+                .x(() => { });
 
             "And the number {1}"
-                .f(() => { });
+                .x(() => { });
 
             "And a calculator"
-                .f(() => calculator = new Calculator());
+                .x(() => calculator = new Calculator());
 
             "And some disposable object"
-                .f(c => new Disposable().Using(c));
+                .x(c => new Disposable().Using(c));
 
             "When I add the numbers together"
-                .f(async () => answer = await calculator.AddAsync(x, y));
+                .x(async () => answer = await calculator.AddAsync(x, y));
 
             "Then the answer is {2}"
-                .f(() => answer.Should().Be(expectedAnswer));
+                .x(() => answer.Should().Be(expectedAnswer));
 
             "And the answer is one more than {2}"
-                .f(() => answer.Should().Be(expectedAnswer + 1))
+                .x(() => answer.Should().Be(expectedAnswer + 1))
                 .Skip("because the assertion is nonsense");
 
             "But the answer is not one less than {2}"
-                .f(() => answer.Should().NotBe(expectedAnswer - 1));
+                .x(() => answer.Should().NotBe(expectedAnswer - 1));
         }
     }
 }

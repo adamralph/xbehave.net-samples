@@ -7,7 +7,7 @@ module CustomOperator =
     open Xunit
 
     // custom operator
-    let (-->) (s:string) f = s.f(System.Action< >(f)) |> ignore
+    let (-->) (s:string) f = s.x(System.Action< >(f)) |> ignore
 
     // SUT
     type Calculator () = member __.Add(x,y) = x + y

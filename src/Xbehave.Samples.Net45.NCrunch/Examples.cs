@@ -12,19 +12,19 @@
         public void Addition(int x, int y, int expectedAnswer, Calculator calculator, int answer)
         {
             "Given the number {0}"
-                .f(() => { });
+                .x(() => { });
 
             "And the number {1}"
-                .f(() => { });
+                .x(() => { });
 
             "And a calculator"
-                .f(() => calculator = new Calculator());
+                .x(() => calculator = new Calculator());
 
             "When I add the numbers together"
-                .f(() => answer = calculator.Add(x, y));
+                .x(() => answer = calculator.Add(x, y));
 
             "Then the answer is {2}"
-                .f(() => answer.Should().Be(expectedAnswer));
+                .x(() => answer.Should().Be(expectedAnswer));
         }
     }
 }

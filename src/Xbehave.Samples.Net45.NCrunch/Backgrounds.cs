@@ -12,19 +12,19 @@
         public static void Background()
         {
             "Given a global administrator named \"Greg\""
-                .f(() => Users.Save(new GlobalAdministrator { Name = "Greg", Password = "apples" }))
+                .x(() => Users.Save(new GlobalAdministrator { Name = "Greg", Password = "apples" }))
                 .Teardown(() => Users.Remove("Greg"));
 
             "And a blog named \"Greg's anti-tax rants\" owned by \"Greg\""
-                .f(() => Blogs.Save(new Blog { Name = "Greg's anti-tax rants", Owner = Users.Get("Greg") }))
+                .x(() => Blogs.Save(new Blog { Name = "Greg's anti-tax rants", Owner = Users.Get("Greg") }))
                 .Teardown(() => Blogs.Remove("Greg's anti-tax rants"));
 
             "And a customer named \"Dr. Bill\""
-                .f(() => Users.Save(new Customer { Name = "Dr. Bill", Password = "oranges" }))
+                .x(() => Users.Save(new Customer { Name = "Dr. Bill", Password = "oranges" }))
                 .Teardown(() => Users.Remove("Dr. Bill"));
 
             "And a blog named \"Expensive Therapy\" owned by \"Dr. Bill\""
-                .f(() => Blogs.Save(new Blog { Name = "Expensive Therapy", Owner = Users.Get("Dr. Bill") }))
+                .x(() => Blogs.Save(new Blog { Name = "Expensive Therapy", Owner = Users.Get("Dr. Bill") }))
                 .Teardown(() => Blogs.Remove("Expensive Therapy"));
         }
 
@@ -32,39 +32,39 @@
         public static void DoctorBillPostsToHisOwnBlog()
         {
             "Given I am logged in as Dr. Bill"
-                .f(() => Site.Login("Dr. Bill", "oranges"));
+                .x(() => Site.Login("Dr. Bill", "oranges"));
 
             "When I try to post to \"Expensive Therapy\""
-                .f(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
+                .x(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
 
             "Then I should see \"Your article was published.\""
-                .f(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
+                .x(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
         }
 
         [Scenario]
         public static void DoctorBillTriesToPostToSomebodyElsesBlogAndFails()
         {
             "Given I am logged in as Dr. Bill"
-                .f(() => Site.Login("Dr. Bill", "oranges"));
+                .x(() => Site.Login("Dr. Bill", "oranges"));
 
             "When I try to post to \"Greg's anti-tax rants\""
-                .f(() => Blogs.Get("Greg's anti-tax rants").Post(new Article { Body = "This is a great blog!" }));
+                .x(() => Blogs.Get("Greg's anti-tax rants").Post(new Article { Body = "This is a great blog!" }));
 
             "Then I should see \"Hey! That's not your blog!\""
-                .f(() => Site.CurrentPage.Body.Should().Contain("Hey! That's not your blog!"));
+                .x(() => Site.CurrentPage.Body.Should().Contain("Hey! That's not your blog!"));
         }
 
         [Scenario]
         public static void GregPostsToAClientBlog()
         {
             "Given I am logged in as Greg"
-                .f(() => Site.Login("Greg", "apples"));
+                .x(() => Site.Login("Greg", "apples"));
 
             "When I try to post to \"Expensive Therapy\""
-                .f(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
+                .x(() => Blogs.Get("Expensive Therapy").Post(new Article { Body = "This is a great blog!" }));
 
             "Then I should see \"Your article was published.\""
-                .f(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
+                .x(() => Site.CurrentPage.Body.Should().Contain("Your article was published."));
         }
 
         private static class Site

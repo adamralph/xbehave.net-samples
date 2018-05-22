@@ -14,16 +14,16 @@ module DirectConversion =
         let x, y, calculator, answer = ref x, ref y, ref calculator, ref answer
 
         "Given the number 1"
-            .f(fun () -> x := 1) |> ignore
+            .x(fun () -> x := 1) |> ignore
 
         "And the number 2"
-            .f(fun () -> y := 2) |> ignore
+            .x(fun () -> y := 2) |> ignore
 
         "And a calculator"
-            .f(fun () -> calculator := Calculator()) |> ignore
+            .x(fun () -> calculator := Calculator()) |> ignore
 
         "When I add the numbers together"
-            .f(fun () -> answer := (!calculator).Add(!x, !y)) |> ignore
+            .x(fun () -> answer := (!calculator).Add(!x, !y)) |> ignore
 
         "Then the answer is 3"
-            .f(fun () -> Assert.Equal(3, !answer))
+            .x(fun () -> Assert.Equal(3, !answer))
