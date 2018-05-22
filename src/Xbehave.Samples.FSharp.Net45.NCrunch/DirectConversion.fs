@@ -1,8 +1,4 @@
-﻿// <copyright file="DirectConversion.fs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-// QuickStart sample direct conversion to F# from C#
+﻿// QuickStart sample direct conversion to F# from C#
 // based on http://fssnip.net/km by Phillip Trelford http://trelford.com/blog
 namespace Xbehave.Samples.FSharp
 

@@ -1,8 +1,4 @@
-﻿// <copyright file="CustomOperator.fs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-// Quickstart sample conversion in F# using a custom operator
+﻿// Quickstart sample conversion in F# using a custom operator
 // based on http://fssnip.net/ko by Phillip Trelford http://trelford.com/blog
 namespace Xbehave.Samples.FSharp
 

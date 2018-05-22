@@ -1,8 +1,4 @@
-﻿// <copyright file="Backgrounds.cs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-namespace Xbehave.Samples
+﻿namespace Xbehave.Samples
 {
     using FluentAssertions;
 
