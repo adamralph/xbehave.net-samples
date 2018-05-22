@@ -1,8 +1,4 @@
-﻿// <copyright file="Calculator.cs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-namespace Xbehave.Samples.Fixtures
+﻿namespace Xbehave.Samples.Fixtures
 {
     using System.Threading.Tasks;
 

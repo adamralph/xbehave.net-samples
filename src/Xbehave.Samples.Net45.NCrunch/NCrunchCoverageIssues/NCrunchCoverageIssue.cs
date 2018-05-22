@@ -1,8 +1,4 @@
-﻿// <copyright file="NCrunchCoverageIssue.cs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-namespace Xbehave.Samples.NCrunchCoverageIssues
+﻿namespace Xbehave.Samples.NCrunchCoverageIssues
 {
     using FluentAssertions;
     using Xbehave;

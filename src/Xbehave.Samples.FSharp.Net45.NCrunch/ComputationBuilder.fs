@@ -1,8 +1,4 @@
-﻿// <copyright file="ComputationBuilder.fs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-// Quickstart sample conversion using a custom F# computation builder for steps and custom functions for Given/When/Then/And/But
+﻿// Quickstart sample conversion using a custom F# computation builder for steps and custom functions for Given/When/Then/And/But
 // based on http://fssnip.net/kq by Tomas Petricek http://tomasp.net/blog
 namespace Xbehave.Samples.FSharp
 

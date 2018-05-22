@@ -1,8 +1,4 @@
-﻿// <copyright file="Pipes.fs" company="xBehave.net contributors">
-//  Copyright (c) xBehave.net contributors. All rights reserved.
-// </copyright>
-
-// QuickStart sample conversion to F# from C# with some helper functions
+﻿// QuickStart sample conversion to F# from C# with some helper functions
 // based on http://fssnip.net/kn by Phillip Trelford http://trelford.com/blog
 namespace Xbehave.Samples.FSharp
 
