@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.Net45.NCrunch", "Xbehave.Samples.Net45.NCrunch\Xbehave.Samples.Net45.NCrunch.csproj", "{318A83C1-F734-4612-A04F-9BE0D26657BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.Net45.NCrunch", "src\Xbehave.Samples.Net45.NCrunch\Xbehave.Samples.Net45.NCrunch.csproj", "{318A83C1-F734-4612-A04F-9BE0D26657BF}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Xbehave.Samples.FSharp.Net45.NCrunch", "Xbehave.Samples.FSharp.Net45.NCrunch\Xbehave.Samples.FSharp.Net45.NCrunch.fsproj", "{410529E9-B417-44D0-A48E-B3009E16783E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Xbehave.Samples.FSharp.Net45.NCrunch", "src\Xbehave.Samples.FSharp.Net45.NCrunch\Xbehave.Samples.FSharp.Net45.NCrunch.fsproj", "{410529E9-B417-44D0-A48E-B3009E16783E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.Net45.MSBuild", "Xbehave.Samples.Net45.MSBuild\Xbehave.Samples.Net45.MSBuild.csproj", "{27E0ED44-121C-4DC5-AD15-B43EF6E3DDF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbehave.Samples.Net45.MSBuild", "src\Xbehave.Samples.Net45.MSBuild\Xbehave.Samples.Net45.MSBuild.csproj", "{27E0ED44-121C-4DC5-AD15-B43EF6E3DDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
