@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
-    <LangVersion>latest</LangVersion>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,12 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Xbehave.Samples.FSharp.Net45.NCrunch.v2.ncrunchproject" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Xbehave" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="Xbehave" Version="2.4.1-rc.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
   </ItemGroup>
 
 </Project>
