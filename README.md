@@ -2,4 +2,4 @@
 
 # Samples
 
-Sample test projects demonstrating features of [xBehave.net](http://xbehave.github.io/).
+Sample test projects demonstrating features of [xBehave.net](https://github.com/xbehave/xbehave.net).
